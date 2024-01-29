@@ -1,0 +1,1 @@
+dotnet ef migrations add $1 --verbose --context=SessionDbContext && dotnet ef database update

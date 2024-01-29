@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34221.43
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SessionControlService", "SessionService\SessionControlService.csproj", "{C7DEC3FF-4E5A-4E91-9536-A1E1CD15712A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7DEC3FF-4E5A-4E91-9536-A1E1CD15712A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7DEC3FF-4E5A-4E91-9536-A1E1CD15712A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7DEC3FF-4E5A-4E91-9536-A1E1CD15712A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7DEC3FF-4E5A-4E91-9536-A1E1CD15712A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9BA865C5-7B21-4829-8420-4798615A1FBD}
+	EndGlobalSection
+EndGlobal
