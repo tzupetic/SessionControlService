@@ -108,7 +108,7 @@ public class SessionService : ISessionService
     {
         var session = await GetSession(ping.SessionId, true);
 
-        if (session.State == ping.SessionState)
+        if (session.State == SessionState.Play)
         {
             throw new Exception("Invalid SessionState");
         }
