@@ -108,11 +108,6 @@ public class SessionService : ISessionService
     {
         var session = await GetSession(ping.SessionId, true);
 
-        if (session.State == SessionState.Play)
-        {
-            throw new Exception("Invalid SessionState");
-        }
-
         session.LastActivityTime = DateTime.UtcNow;
         session.State = ping.SessionState;
 

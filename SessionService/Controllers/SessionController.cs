@@ -39,12 +39,12 @@ public class SessionController : ControllerBaseExtended
         var session = await _sessionService.GetSession(id);
         if (session == null)
         {
-            return NotFound();
+            throw new NotFoundException();
         }
         return Ok(session);
     }
 
-    [HttpGet()]
+    [HttpGet]
     public async Task<ActionResult<PagedResult<Session>>> GetSessions(
         [FromQuery] SessionSearchRequest request,
         int page = 1,

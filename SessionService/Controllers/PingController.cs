@@ -22,9 +22,12 @@ public class PingController : ControllerBaseExtended
     [HttpPut]
     public async Task<ActionResult> Ping(Ping ping)
     {
-        if (!Enum.IsDefined(typeof(SessionState), ping.SessionState))
+        if (
+            !Enum.IsDefined(typeof(SessionState), ping.SessionState)
+            || ping.SessionState == SessionState.Play
+        )
         {
-            return BadRequest("Invalid SessionState");
+            throw new BadRequestException("Invalid SessionState");
         }
 
         await _sessionService.HandlePing(ping);
